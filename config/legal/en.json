@@ -1,0 +1,70 @@
+{
+  "labels": {
+    "updatedAt": "Last updated",
+    "toc": "On this page"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "How ZNBSYS collects, uses and protects your personal information.",
+    "updatedAt": "2026-10-05",
+    "intro": "This policy explains how we handle personal information when you use this website. We collect the minimum needed to provide our services.",
+    "sections": [
+      {
+        "heading": "Information we collect",
+        "paragraphs": [
+          "When you contact us through the form, you voluntarily provide your name, email, company and project details; these are used only to reply to you. The site runs no third-party tracking scripts and requires no account registration."
+        ]
+      },
+      {
+        "heading": "How we use it",
+        "paragraphs": [
+          "We use the information to answer your inquiry, prepare proposals and quotes, and — with your consent — to keep records of project-related communication. We never use it for advertising and never sell it."
+        ]
+      },
+      {
+        "heading": "Sharing, storage and security",
+        "paragraphs": [
+          "We do not share personal information with third parties unless required by law or unless you agree in advance. Data lives in access-controlled hosting with reasonable transport and storage protections, and is kept only as long as needed."
+        ]
+      },
+      {
+        "heading": "Your rights and contact",
+        "paragraphs": [
+          "You may access, correct or request deletion of the personal information we hold. To do so, or to ask questions about this policy, write to znbsys@outlook.com — we reply within 15 business days."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "ZNBSYS terms covering collaboration, payment, intellectual property and liability.",
+    "updatedAt": "2026-10-05",
+    "intro": "These terms apply to your use of this website and to working with us, unless a separate signed agreement states otherwise.",
+    "sections": [
+      {
+        "heading": "Scope of services",
+        "paragraphs": [
+          "We provide design, development, deployment and maintenance for websites and web applications. Deliverables and milestones are defined in the project proposal or contract; content on this site is not an offer."
+        ]
+      },
+      {
+        "heading": "Collaboration and payment",
+        "paragraphs": [
+          "Projects progress against agreed milestones and payment schedules; you provide required materials and feedback on time. Significant scope changes are evaluated separately for schedule and cost."
+        ]
+      },
+      {
+        "heading": "Intellectual property and confidentiality",
+        "paragraphs": [
+          "Ownership of deliverables transfers as defined in the contract after full payment; we may reuse general technical approaches in other projects without disclosing your confidential information. Both parties keep confidential information secret."
+        ]
+      },
+      {
+        "heading": "Liability and changes",
+        "paragraphs": [
+          "To the extent permitted by law, we are not liable for indirect damages arising from use of this site or our services. We may update these terms from time to time; the version published on this page takes effect immediately."
+        ]
+      }
+    ]
+  }
+}

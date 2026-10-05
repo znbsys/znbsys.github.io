@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="ZNBSYS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset="0.55" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="none" stroke="#60a5fa" stroke-opacity="0.22" stroke-width="2">
+    <rect x="80" y="120" width="1040" height="60" rx="12"/>
+    <rect x="80" y="220" width="500" height="300" rx="16"/>
+    <rect x="620" y="220" width="500" height="140" rx="16"/>
+    <rect x="620" y="390" width="500" height="130" rx="16"/>
+  </g>
+  <rect x="80" y="120" width="60" height="60" rx="12" fill="#2563eb"/>
+  <path d="M110 140l-12 12 12 12M130 140l12 12-12 12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="580" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">ZNBSYS</text>
+  <text x="80" y="614" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#94a3b8">Full-stack Web Development</text>
+</svg>

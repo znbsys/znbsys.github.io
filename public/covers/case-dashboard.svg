@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Analytics dashboard case cover">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b45309"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2">
+    <rect x="64" y="56" width="512" height="48" rx="10"/>
+    <rect x="64" y="128" width="248" height="168" rx="12"/>
+    <rect x="336" y="128" width="240" height="168" rx="12"/>
+  </g>
+  <g fill="#fcd34d" fill-opacity="0.7">
+    <rect x="96" y="216" width="26" height="52" rx="4"/>
+    <rect x="136" y="188" width="26" height="80" rx="4"/>
+    <rect x="176" y="164" width="26" height="104" rx="4"/>
+    <rect x="216" y="200" width="26" height="68" rx="4"/>
+    <rect x="256" y="152" width="26" height="116" rx="4"/>
+  </g>
+  <path d="M368 248l48-56 44 32 52-72 44 40" fill="none" stroke="#fcd34d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

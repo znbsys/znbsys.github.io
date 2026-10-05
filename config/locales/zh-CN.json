@@ -1,0 +1,499 @@
+{
+  "meta": {
+    "title": "ZNBSYS · 全栈 Web 开发与数字化解决方案",
+    "description": "ZNBSYS 提供企业官网、Web 应用、后台管理系统、电商与长期运维的一站式开发服务，用可度量的结果交付可靠的数字产品。",
+    "keywords": ["Web 开发", "网站建设", "Web 应用开发", "外包开发", "ZNBSYS"],
+    "favicon": "/favicon.svg",
+    "ogImage": "/og.svg",
+    "locale": "zh-CN"
+  },
+  "theme": {
+    "primary": "#2563eb",
+    "secondary": "#7c3aed",
+    "radius": "xl",
+    "font": "sans",
+    "background": "gradient"
+  },
+  "brand": {
+    "name": "ZNBSYS",
+    "logoSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>",
+    "tagline": "全栈 Web 开发与数字化解决方案"
+  },
+  "navbar": {
+    "sticky": true,
+    "links": [
+      { "label": "首页", "href": "/" },
+      { "label": "服务", "href": "/services/" },
+      { "label": "案例", "href": "/cases/" },
+      { "label": "关于", "href": "/about/" },
+      { "label": "联系", "href": "/contact/" }
+    ],
+    "ctaButton": { "text": "免费咨询", "href": "/contact/" }
+  },
+  "hero": {
+    "badge": "设计 · 开发 · 上线 · 运维",
+    "headline": "把想法，变成能上线的 Web 产品",
+    "subheadline": "从企业官网到复杂 Web 应用，我们提供需求梳理、界面设计、研发交付与长期运维的一站式服务，用可度量的结果说话。",
+    "primaryCta": { "text": "查看服务", "href": "/services/" },
+    "secondaryCta": { "text": "成功案例", "href": "/cases/" }
+  },
+  "services": {
+    "title": "我们能承接的开发服务",
+    "subtitle": "覆盖从 0 到 1 的建设与从 1 到 N 的迭代，按项目制或长期驻场协作。",
+    "columns": 3,
+    "items": [
+      {
+        "id": "corporate-web",
+        "iconName": "Globe",
+        "title": "企业官网与营销站",
+        "summary": "品牌官网、产品站、落地页，兼顾 SEO、性能与多语言。",
+        "description": "为企业与产品打造高性能、可维护的官网与营销站点。我们从信息架构与内容策略入手，交付响应式页面、SEO 结构与统计埋点，并支持三语或多语扩展，让获客成本随时间下降。",
+        "capabilities": ["信息架构与内容规划", "响应式页面开发", "SEO 结构与站点速度优化", "多语言与内容配置化"],
+        "deliverables": ["可静态部署的站点源码", "设计稿与组件说明", "SEO 元数据与站点地图", "部署与发布流程"],
+        "scenarios": ["企业品牌官网", "产品营销落地页", "活动与专题站点"],
+        "tech": ["Next.js", "React", "Tailwind CSS", "GitHub Pages"]
+      },
+      {
+        "id": "web-app",
+        "iconName": "Code2",
+        "title": "Web 应用开发",
+        "summary": "SaaS 平台、业务系统、数据工具的前后端一体交付。",
+        "description": "面向业务流程的 Web 应用开发：从原型验证到规模化迭代，覆盖权限、审批、报表、集成等常见能力。我们采用组件化前端与可演进的服务端架构，保证后续迭代不推倒重来。",
+        "capabilities": ["需求梳理与原型设计", "前后端一体开发", "权限与多租户设计", "第三方系统集成"],
+        "deliverables": ["可运行的应用系统", "接口文档与数据字典", "测试用例与验收报告", "源码与交付说明"],
+        "scenarios": ["SaaS 产品", "客户/合作伙伴门户", "内部业务系统"],
+        "tech": ["Next.js", "TypeScript", "Node.js", "PostgreSQL"]
+      },
+      {
+        "id": "admin-system",
+        "iconName": "LayoutDashboard",
+        "title": "后台管理系统",
+        "summary": "内容管理、运营后台、审批工作流与权限体系。",
+        "description": "把重复的人工流程沉淀为系统能力：表单与工作流、角色权限、数据字典、导出与报表。我们重视后台的可用性与一致性，让运营同事愿意用、用得快。",
+        "capabilities": ["角色与权限建模", "工作流与表单引擎", "数据表格与批量操作", "日志与审计留痕"],
+        "deliverables": ["管理后台系统", "权限矩阵文档", "操作手册", "部署与备份方案"],
+        "scenarios": ["CMS 内容管理", "运营与审核后台", "订单与工单系统"],
+        "tech": ["React", "Ant Design", "REST API", "MySQL"]
+      },
+      {
+        "id": "ecommerce",
+        "iconName": "ShoppingCart",
+        "title": "电商与小程序",
+        "summary": "独立站、小程序商城、支付与订单履约链路。",
+        "description": "覆盖商品、购物车、优惠、支付、订单与售后的完整交易链路，支持独立站与小程序商城双端一致。我们同样关注转化率优化与营销活动的可配置能力。",
+        "capabilities": ["商品与库存模型", "支付与订单流程", "营销活动配置", "转化率与埋点分析"],
+        "deliverables": ["商城前台与管理后台", "支付接入与联调", "运营配置说明", "上线检查清单"],
+        "scenarios": ["跨境独立站", "品牌小程序商城", "会员制商城"],
+        "tech": ["Next.js", "微信小程序", "Stripe", "支付网关"]
+      },
+      {
+        "id": "mobile-h5",
+        "iconName": "Smartphone",
+        "title": "H5 与跨端应用",
+        "summary": "移动 H5、活动页、React Native 跨端客户端。",
+        "description": "面向移动端场景的 H5 页面与跨端应用开发：分享裂变活动页、扫码核销、轻量客户端。在性能与兼容性上做取舍，保证中低端机型也流畅。",
+        "capabilities": ["移动端性能优化", "跨端复用与一致性", "分享与拉新链路", "兼容性测试"],
+        "deliverables": ["H5 页面或跨端应用", "兼容性测试报告", "发布与热更流程", "埋点方案"],
+        "scenarios": ["营销活动 H5", "扫码与线下核销", "轻量跨端 App"],
+        "tech": ["React", "React Native", "Vite", "移动端适配"]
+      },
+      {
+        "id": "maintenance",
+        "iconName": "LifeBuoy",
+        "title": "运维与技术支持",
+        "summary": "部署上线、监控告警、迭代维护与安全加固。",
+        "description": "交付不是终点：我们提供持续的部署发布、故障响应、依赖升级与安全补丁，按月或按年订阅，让系统稳定跑在正轨上。",
+        "capabilities": ["CI/CD 与自动化发布", "监控告警与日志", "性能调优与安全加固", "依赖升级与迭代维护"],
+        "deliverables": ["运维手册与应急预案", "监控看板", "月度健康报告", "SLA 响应保障"],
+        "scenarios": ["存量系统维护", "上线后的持续迭代", "安全与性能整改"],
+        "tech": ["GitHub Actions", "Docker", "Nginx", "日志与监控"]
+      }
+    ]
+  },
+  "cases": {
+    "title": "成功案例",
+    "subtitle": "真实项目、可量化结果。以下为占位示例内容，正式上线前将替换为已授权的真实案例。",
+    "items": [
+      {
+        "slug": "manufacturing-website-rebuild",
+        "title": "智能制造企业官网改版",
+        "summary": "为制造企业重建品牌官网与多语言站点，重构信息架构并把首屏打开时间压到 1.5 秒以内。",
+        "client": "恒达智造",
+        "industry": "智能制造",
+        "year": "2025",
+        "services": ["corporate-web"],
+        "tech": ["Next.js", "Tailwind CSS", "headless CMS", "i18n"],
+        "results": [
+          { "label": "首屏打开时间", "value": "1.4s" },
+          { "label": "自然搜索流量", "value": "+180%" },
+          { "label": "有效询盘", "value": "+95%" }
+        ],
+        "cover": "/covers/case-manufacturing.svg",
+        "featured": true,
+        "detail": {
+          "overview": "用一次改版，把官网从『品牌名片』变成『获客渠道』。",
+          "background": [
+            "客户原有官网基于十年前的模板搭建，页面结构混乱、移动端体验差，海外买家很难在三步之内找到产品规格与联系方式。",
+            "同时内容更新依赖外包，一次产品资料调整要走一周流程，市场团队无法自主维护。"
+          ],
+          "approach": [
+            "我们先与市场与销售团队共创信息架构，把内容归并为『产品线 → 型号 → 规格』三层结构，并建立可配置的多语言内容模型。",
+            "前端采用 Next.js 静态生成，配合图片优化与字体策略，把首屏资源压到最小；SEO 层面补齐结构化数据与站点地图。"
+          ],
+          "steps": [
+            { "title": "调研与信息架构", "text": "访谈 8 位内部用户与 5 位海外买家，输出站点地图与内容清单。" },
+            { "title": "视觉与组件设计", "text": "基于品牌色建立设计令牌与 20+ 组件，输出高保真设计稿。" },
+            { "title": "开发与内容迁移", "text": "三语并行开发，编写脚本批量迁移历史资料并校对。" },
+            { "title": "上线与交接", "text": "接入统计与搜索收录，培训市场团队自主维护。" }
+          ]
+        }
+      },
+      {
+        "slug": "saas-console",
+        "title": "SaaS 控制台与计费系统",
+        "summary": "为客户搭建多租户 SaaS 控制台，覆盖订阅、用量计费与工单，支撑从 0 到付费客户的完整闭环。",
+        "client": "云策科技",
+        "industry": "SaaS 软件",
+        "year": "2025",
+        "services": ["web-app", "admin-system"],
+        "tech": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
+        "results": [
+          { "label": "上线周期", "value": "12周" },
+          { "label": "计费对账差错", "value": "0" },
+          { "label": "人工客服工单", "value": "-40%" }
+        ],
+        "cover": "/covers/case-saas.svg",
+        "featured": true,
+        "detail": {
+          "overview": "把订阅、用量与工单放进同一套账户体系，让商业化跑得动。",
+          "background": [
+            "客户的产品原本只有试用版，缺少账号体系、套餐管理与计费能力，商业化全靠线下合同与人工对账。",
+            "运营团队需要自助配置套餐与优惠，否则每次调整都要排期开发。"
+          ],
+          "approach": [
+            "我们设计了租户、成员、订阅、用量四层数据模型，把计费事件落库并对齐支付渠道回调，保证每笔账单可追溯。",
+            "控制台采用服务端渲染 + 客户端局部交互的混合模式，关键列表页首屏控制在 1 秒内。"
+          ],
+          "steps": [
+            { "title": "商业化流程梳理", "text": "把试用、转化、续费、退款画成状态机，明确每个节点的系统职责。" },
+            { "title": "数据模型与接口", "text": "定义租户/订阅/用量模型与幂等的计费接口。" },
+            { "title": "控制台与账单", "text": "实现套餐配置、用量看板、账单明细与自助开票。" },
+            { "title": "联调与压测", "text": "与支付渠道联调回调链路，完成对账与并发压测。" }
+          ]
+        }
+      },
+      {
+        "slug": "cross-border-store",
+        "title": "跨境电商独立站",
+        "summary": "从零搭建品牌独立站与运营后台，打通支付、库存与物流查询，上线三个月 GMV 破千万。",
+        "client": "蓝湾生活",
+        "industry": "电商零售",
+        "year": "2024",
+        "services": ["ecommerce", "corporate-web"],
+        "tech": ["Next.js", "Stripe", "headless CMS", "Vercel"],
+        "results": [
+          { "label": "首单转化率", "value": "+62%" },
+          { "label": "页面加载", "value": "1.8s" },
+          { "label": "大促峰值订单", "value": "×5" }
+        ],
+        "cover": "/covers/case-ecommerce.svg",
+        "featured": true,
+        "detail": {
+          "overview": "一次把『能卖货』和『能运营』同时做完的建站实践。",
+          "background": [
+            "品牌方原计划用现成建站 SaaS 快速起步，但在多币种、税费展示与自有营销系统对接上反复受限。",
+            "他们需要既能快速上线、又留有自定义空间的方案。"
+          ],
+          "approach": [
+            "我们采用 headless 架构：前台静态生成保证速度，商品与内容经由 CMS 与商品服务下发，支付与库存走独立接口。",
+            "运营后台提供活动位、优惠码与库存预警配置，市场同学无需开发介入即可完成大促准备。"
+          ],
+          "steps": [
+            { "title": "选型与架构设计", "text": "对比建站 SaaS 与自建方案，输出成本与扩展性评估。" },
+            { "title": "交易链路开发", "text": "完成购物车、优惠、支付、税费与物流查询的全链路。" },
+            { "title": "运营后台", "text": "交付活动位、优惠码、库存与订单管理能力。" },
+            { "title": "大促保障", "text": "压测与缓存策略调优，制定大促当天的值守与回滚预案。" }
+          ]
+        }
+      },
+      {
+        "slug": "edtech-learning-platform",
+        "title": "在线教育学习平台",
+        "summary": "构建课程、作业、直播与学习数据一体化的平台，让教务与讲师团队的日常效率提升一半。",
+        "client": "启程学堂",
+        "industry": "教育科技",
+        "year": "2024",
+        "services": ["web-app"],
+        "tech": ["Next.js", "React", "MySQL", "对象存储", "直播 SDK"],
+        "results": [
+          { "label": "教务处理时长", "value": "-50%" },
+          { "label": "学员完课率", "value": "+28%" },
+          { "label": "并发直播稳定", "value": "5000人" }
+        ],
+        "cover": "/covers/case-edtech.svg",
+        "featured": false,
+        "detail": {
+          "overview": "把排课、作业与学习数据接进同一条主线，减少表格搬运。",
+          "background": [
+            "机构原本用表格 + 群消息管理课程与作业，教务每周要花大量时间核对名单与进度。",
+            "学员端缺少连续的学习路径，完课率长期徘徊不前。"
+          ],
+          "approach": [
+            "我们把课程、班级、作业、直播抽象为统一的排课模型，教务在一个界面完成大部分操作。",
+            "学员端强化学习路径与进度反馈，配合提醒机制，把『下一步该做什么』始终摆在眼前。"
+          ],
+          "steps": [
+            { "title": "业务访谈", "text": "跟随教务完整跑一周流程，定位耗时与出错环节。" },
+            { "title": "排课与权限模型", "text": "设计班级/课程/讲师的权限矩阵与冲突校验。" },
+            { "title": "学员端体验", "text": "重构学习路径、作业提交与回放体验。" },
+            { "title": "数据看板", "text": "输出完课率、活跃度与教务效率看板。" }
+          ]
+        }
+      },
+      {
+        "slug": "ops-portal",
+        "title": "企业内部运营中台",
+        "summary": "把散落在表格与邮件里的审批流程搬进系统，实现工单、权限与审计的一体化管理。",
+        "client": "瑞成集团",
+        "industry": "企业服务",
+        "year": "2023",
+        "services": ["admin-system", "maintenance"],
+        "tech": ["React", "Node.js", "MySQL", "RBAC"],
+        "results": [
+          { "label": "审批平均时长", "value": "-65%" },
+          { "label": "流程线上化", "value": "100%" },
+          { "label": "年度人力节省", "value": "约3人" }
+        ],
+        "cover": "/covers/case-portal.svg",
+        "featured": false,
+        "detail": {
+          "overview": "先梳理流程，再上系统：一次把审批链路收敛到一处。",
+          "background": [
+            "集团内部 20 多条审批流程分散在邮件与线下签字中，跨部门流转经常卡在『不知道找谁』。",
+            "缺少留痕，出现问题难以回溯责任人。"
+          ],
+          "approach": [
+            "我们先做流程盘点与简化，把重复节点合并，再以可配置的工作流引擎落地，后续新增流程不再需要改代码。",
+            "配套 RBAC 权限与操作审计，满足内控对留痕的要求。"
+          ],
+          "steps": [
+            { "title": "流程盘点", "text": "梳理 20+ 条流程并输出简化建议，砍掉 40% 冗余节点。" },
+            { "title": "工作流引擎", "text": "实现可配置的节点、条件与抄送规则。" },
+            { "title": "权限与审计", "text": "落地角色权限矩阵与全量操作日志。" },
+            { "title": "推广与运维", "text": "分部门培训上线，转入按月的迭代维护。" }
+          ]
+        }
+      },
+      {
+        "slug": "analytics-dashboard",
+        "title": "经营数据分析看板",
+        "summary": "为管理层搭建实时经营看板，把分散在多个系统的指标统一口径并每日自动更新。",
+        "client": "星野零售",
+        "industry": "互联网",
+        "year": "2023",
+        "services": ["web-app", "maintenance"],
+        "tech": ["React", "ECharts", "Node.js", "数据仓库"],
+        "results": [
+          { "label": "报表产出时间", "value": "3天→10分钟" },
+          { "label": "指标口径统一", "value": "120+" },
+          { "label": "日活使用", "value": "300+" }
+        ],
+        "cover": "/covers/case-dashboard.svg",
+        "featured": false,
+        "detail": {
+          "overview": "统一指标口径，让每天的经营会议不再靠手工表格。",
+          "background": [
+            "业务系统各自为战，同一指标在不同报表里口径不一致，管理层拿到的数字经常互相打架。",
+            "月度报表依赖数据同学手工整理，平均要三天才能产出。"
+          ],
+          "approach": [
+            "我们与客户共同定义指标字典，把口径固化进 ETL 与接口层，前端只消费统一口径的数据。",
+            "看板按角色分层：管理层看大盘，业务看明细，支持下钻与导出。"
+          ],
+          "steps": [
+            { "title": "指标对齐", "text": "与业务方逐条确认 120+ 指标口径并形成字典。" },
+            { "title": "数据管道", "text": "搭建定时任务与数据校验，异常自动告警。" },
+            { "title": "看板开发", "text": "按角色输出大盘、明细与下钻视图。" },
+            { "title": "持续运维", "text": "按月迭代指标与可视化，保障任务稳定运行。" }
+          ]
+        }
+      }
+    ]
+  },
+  "process": {
+    "title": "合作流程",
+    "subtitle": "透明的阶段划分与固定的沟通节奏，让进度与预算始终可控。",
+    "steps": [
+      {
+        "step": "01",
+        "iconName": "MessageSquare",
+        "title": "沟通与需求梳理",
+        "text": "1–2 次深度沟通明确目标、范围与预算，输出需求清单与初步排期。"
+      },
+      {
+        "step": "02",
+        "iconName": "ClipboardList",
+        "title": "方案与原型",
+        "text": "给出信息架构、原型与技术方案，确认交付范围、里程碑与报价。"
+      },
+      {
+        "step": "03",
+        "iconName": "Code",
+        "title": "设计与开发",
+        "text": "双周迭代：设计稿评审、可访问的测试环境、每周进度同步。"
+      },
+      {
+        "step": "04",
+        "iconName": "Rocket",
+        "title": "交付与运维",
+        "text": "上线部署、数据与内容交接、培训与文档，转入按月维护。"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "客户怎么说",
+    "subtitle": "占位评价内容，正式上线前将替换为真实客户反馈。",
+    "items": [
+      {
+        "quote": "从需求梳理到上线，沟通节奏非常稳，每周都能看到可点击的进展，而不是等到最后才见分晓。",
+        "author": "张",
+        "role": "市场总监",
+        "company": "恒达智造",
+        "rating": 5
+      },
+      {
+        "quote": "他们对业务流程的理解超出预期，先把我们混乱的审批理顺，再谈系统，这一点非常专业。",
+        "author": "李",
+        "role": "运营负责人",
+        "company": "瑞成集团",
+        "rating": 5
+      },
+      {
+        "quote": "上线之后仍然能稳定响应，故障处理及时，文档也齐全，交接给内部团队毫无压力。",
+        "author": "王",
+        "role": "技术合伙人",
+        "company": "云策科技",
+        "rating": 5
+      }
+    ]
+  },
+  "about": {
+    "title": "关于我们",
+    "description": [
+      "ZNBSYS 是一支由全栈工程师与设计师组成的小型团队，专注为企业与创业公司交付可上线、可度量的 Web 产品。",
+      "我们相信好的交付来自清晰的流程与坦诚的沟通：需求写在纸面上，进度摆在看板上，问题当周解决，不留到上线那天。"
+    ],
+    "stats": [
+      { "label": "交付项目", "value": "120", "suffix": "+" },
+      { "label": "客户满意度", "value": "98", "suffix": "%" },
+      { "label": "平均首次响应", "value": "<2", "suffix": "h" },
+      { "label": "核心团队", "value": "20", "suffix": "+" }
+    ],
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "团队成立",
+        "text": "以企业官网与活动站点起步，确立『设计+开发一体』的交付方式。"
+      },
+      {
+        "year": "2021",
+        "title": "转向产品化交付",
+        "text": "开始承接后台管理系统与 Web 应用，沉淀组件库与脚手架。"
+      },
+      {
+        "year": "2023",
+        "title": "三语与出海业务",
+        "text": "支持多语言站点与跨境电商项目，交付流程通过 ISO 风格的文档化管理。"
+      },
+      {
+        "year": "2025",
+        "title": "长期运维订阅",
+        "text": "推出按月运维订阅，覆盖监控、安全与持续迭代。"
+      }
+    ],
+    "values": [
+      {
+        "iconName": "HeartHandshake",
+        "title": "以客户成功为准",
+        "text": "先对业务目标负责，再对代码负责；不推销用不上的技术。"
+      },
+      {
+        "iconName": "Lightbulb",
+        "title": "用工程解决业务问题",
+        "text": "把重复劳动自动化，把复杂度留在系统里，把简单留给使用者。"
+      },
+      {
+        "iconName": "Shield",
+        "title": "对质量与安全负责",
+        "text": "代码评审、测试与备份是默认动作，安全不靠事后补救。"
+      }
+    ]
+  },
+  "contact": {
+    "title": "准备好开始你的项目了吗？",
+    "subtitle": "留下需求，我们会在 1 个工作日内回复，并给出初步的范围与预算建议。",
+    "email": "znbsys@outlook.com",
+    "phone": "+81 000-0000-0000",
+    "address": "大阪市天王寺区玉造元町",
+    "socials": [
+      { "platform": "github", "label": "GitHub", "href": "https://github.com/znbsys" },
+      { "platform": "x", "label": "X", "href": "https://x.com/znbsys" },
+      { "platform": "email", "label": "邮件", "href": "mailto:znbsys@outlook.com" }
+    ],
+    "faq": [
+      {
+        "q": "一个官网项目大概需要多久？",
+        "a": "常规企业官网 3–6 周，含多语言与内容迁移通常 6–8 周。收到需求后我们会给出带里程碑的排期。"
+      },
+      {
+        "q": "如何计费？",
+        "a": "按项目固定报价或按人天结算，长期维护按月订阅。方案阶段会明确交付范围，避免中途加价。"
+      },
+      {
+        "q": "只有一部分需求，可以只做其中一段吗？",
+        "a": "可以。常见的是先做设计或先做某个模块，后续再继续合作，我们会按模块拆分报价。"
+      },
+      {
+        "q": "上线之后还提供支持吗？",
+        "a": "提供。交付包含培训与文档，并可转入按月运维订阅，覆盖故障响应、安全补丁与小步迭代。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "有项目想法？我们聊聊。",
+    "text": "无论是从 0 到 1 的新产品，还是需要救火的存量系统，都欢迎先聊清楚再决定。",
+    "primaryCta": { "text": "免费咨询", "href": "/contact/" },
+    "secondaryCta": { "text": "查看更多案例", "href": "/cases/" }
+  },
+  "footer": {
+    "description": "全栈 Web 开发与数字化解决方案：官网、Web 应用、后台系统与长期运维。",
+    "copyright": "© 2026 ZNBSYS. 保留所有权利。",
+    "linkGroups": [
+      {
+        "title": "服务",
+        "links": [
+          { "label": "企业官网与营销站", "href": "/services/#service-corporate-web" },
+          { "label": "Web 应用开发", "href": "/services/#service-web-app" },
+          { "label": "后台管理系统", "href": "/services/#service-admin-system" },
+          { "label": "运维与技术支持", "href": "/services/#service-maintenance" }
+        ]
+      },
+      {
+        "title": "公司",
+        "links": [
+          { "label": "成功案例", "href": "/cases/" },
+          { "label": "关于我们", "href": "/about/" },
+          { "label": "联系我们", "href": "/contact/" }
+        ]
+      },
+      {
+        "title": "法务",
+        "links": [
+          { "label": "隐私政策", "href": "/privacy/" },
+          { "label": "服务条款", "href": "/terms/" }
+        ]
+      }
+    ]
+  },
+  "order": ["hero", "services", "featuredCases", "process", "testimonials", "cta"]
+}

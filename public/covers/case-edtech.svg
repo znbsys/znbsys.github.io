@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Education platform case cover">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2">
+    <rect x="64" y="64" width="300" height="232" rx="14"/>
+    <rect x="384" y="64" width="192" height="66" rx="10"/>
+    <rect x="384" y="146" width="192" height="66" rx="10"/>
+    <rect x="384" y="228" width="192" height="68" rx="10"/>
+  </g>
+  <circle cx="214" cy="156" r="46" fill="none" stroke="#c4b5fd" stroke-width="6"/>
+  <path d="M200 134l34 22-34 22z" fill="#c4b5fd"/>
+  <g fill="#c4b5fd" fill-opacity="0.6">
+    <rect x="104" y="232" width="220" height="10" rx="5"/>
+    <rect x="104" y="256" width="160" height="10" rx="5"/>
+  </g>
+</svg>
