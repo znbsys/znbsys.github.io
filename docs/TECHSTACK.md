@@ -121,23 +121,23 @@ znbsys.github.io/
 
 ### 4.1 颜色：CSS 变量 → Tailwind 语义类
 
-`app/globals.css` 的 `:root` 默认值（深色基线，与参考项目一致）：
+`app/globals.css` 的 `:root` 默认值（亮色基线，与默认主色派生的亮色调色板一致）：
 
 ```css
 --color-primary: 37 99 235;       /* #2563EB 品牌蓝 */
 --color-secondary: 124 58 237;    /* #7C3AED 渐变副色 */
---color-page: 2 6 23;             /* slate-950 页面底 */
---color-band: 15 23 42;           /* slate-900 交替分区 */
---color-surface: 30 41 59;        /* slate-800 卡片底 */
---color-line: 30 41 59;           /* 描边 */
---color-line-strong: 51 65 85;
---color-panel: 255 255 255;       /* 磨砂导航/浮层（白） */
---color-panel-line: 226 232 240;
---color-accent: 96 165 250;       /* blue-400 徽标/图标 */
---color-title: 255 255 255;
---color-ink: 241 245 249;
---color-soft: 203 213 225;
---color-muted: 148 163 184;
+--color-page: 249 250 251;        /* 页面底（近白） */
+--color-band: 240 241 245;        /* 交替分区 */
+--color-surface: 222 227 237;     /* 卡片底 */
+--color-line: 204 210 224;        /* 描边 */
+--color-line-strong: 169 181 208;
+--color-panel: 252 252 253;       /* 磨砂导航/浮层 */
+--color-panel-line: 212 217 227;
+--color-accent: 27 77 187;        /* 徽标/图标（亮底强调色） */
+--color-title: 15 23 42;          /* slate-900 */
+--color-ink: 30 41 59;            /* slate-800 */
+--color-soft: 71 85 105;          /* slate-600 */
+--color-muted: 100 116 139;       /* slate-500 */
 --radius-card: 1rem;
 ```
 
@@ -167,6 +167,7 @@ colors: {
 ### 4.2 主题模式
 
 - 不使用 `class="dark"`；而是**由「主色 hex + mode(dark|light)」派生整套调色板**（`lib/palette.ts`），写入上述 CSS 变量。
+- 默认 mode 为 **light（亮色背景）**；可在 `/admin` 切换为 dark，切换结果写入 CSS 变量。
 - 主色 12 预设（`lib/themePresets.ts`：默认蓝 `#2563EB`、朱红、橙、琥珀、翠绿、青、天青、靛蓝、紫、品红、玫红、石板）+ 自定义取色器。
 - 持久化：`localStorage` 的 `znbsys.theme-primary` / `znbsys.theme-mode`，由 `ThemeColorApplicator` 在 hydration 后应用，避免闪烁。
 

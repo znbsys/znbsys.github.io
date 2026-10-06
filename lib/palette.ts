@@ -1,6 +1,6 @@
 import { hexToRgbTriplet, hslToHex, isDefaultPrimary, parseHex, rgbToHsl } from './color';
 
-/** 背景明暗模式：暗色（默认，与现状一致）/ 亮色 */
+/** 背景明暗模式：亮色（默认）/ 暗色 */
 export type ThemeMode = 'dark' | 'light';
 
 /**
@@ -147,15 +147,15 @@ function darkPalette(primary: string): ThemePalette {
 
 /**
  * 由主题色 + 明暗模式派生完整调色板。
- * 默认色 + 暗色模式返回基线值，保证现有视觉完全不变；
- * 亮色模式始终派生浅色背景与深色文字。
+ * 默认模式为亮色：始终派生浅色背景与深色文字；
+ * 暗色模式 + 默认色返回基线（slate 深色）值。
  */
-export function buildThemePalette(primary: string, mode: ThemeMode = 'dark'): ThemePalette {
-  return mode === 'light' ? lightPalette(primary) : darkPalette(primary);
+export function buildThemePalette(primary: string, mode: ThemeMode = 'light'): ThemePalette {
+  return mode === 'dark' ? darkPalette(primary) : lightPalette(primary);
 }
 
 /** 调色板转为 CSS 自定义属性（R G B 三元组） */
-export function paletteToCssVars(primary: string, mode: ThemeMode = 'dark'): Record<string, string> {
+export function paletteToCssVars(primary: string, mode: ThemeMode = 'light'): Record<string, string> {
   const palette = buildThemePalette(primary, mode);
   const vars: Record<string, string> = {};
   for (const key of Object.keys(palette) as (keyof ThemePalette)[]) {

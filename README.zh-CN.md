@@ -13,7 +13,7 @@ ZNBSYS 公司官网 —— 承接各类 Web 开发业务的多语言（简体中
 
 - Next.js 14 App Router + TypeScript(strict) + Tailwind CSS，`output: export` 纯静态导出
 - 三语内容集中于 `config/locales/*.json`，Zod 校验 + 三语一致性脚本做 CI 门禁
-- 深色 slate 视觉体系、语义化设计令牌（CSS 变量），可切换主色与明暗模式
+- 亮色优先的视觉体系、语义化设计令牌（CSS 变量），可切换主色与明暗模式（默认亮色）
 - 多页结构：首页 / 服务 / 案例列表 + 案例详情 / 关于 / 联系 / 隐私 / 条款 / 404
 - SEO：自引用 canonical + hreflang + Open Graph + `sitemap.xml` / `robots.txt`
 - 无障碍：语义化 landmark、焦点环、`prefers-reduced-motion`、跳转到主内容

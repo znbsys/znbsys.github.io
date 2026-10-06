@@ -13,7 +13,7 @@ ZNBSYS のコーポレートサイト —— Web 開発サービスを紹介す�
 
 - Next.js 14 App Router + TypeScript（strict）+ Tailwind CSS、`output: export` による完全静的出力
 - 3 言語のコンテンツを `config/locales/*.json` に一元化。Zod バリデーションと 3 言語整合チェックで CI をゲート
-- ダークスレート基調のデザインシステム、セマンティックなデザイントークン（CSS 変数）、主色・明暗モード切替可能
+- ライト基調のデザインシステム、セマンティックなデザイントークン（CSS 変数）、主色・明暗モード切替可能（デフォルトはライト）
 - マルチページ構成：ホーム / サービス / 実績一覧 + 実績詳細 / 会社概要 / お問い合わせ / プライバシー / 利用規約 / 404
 - SEO：自己参照 canonical + hreflang + Open Graph + `sitemap.xml` / `robots.txt`
 - アクセシビリティ：セマンティックなランドマーク、フォーカスリング、`prefers-reduced-motion`、スキップリンク

@@ -13,7 +13,7 @@ Corporate website for ZNBSYS — a multilingual (简体中文 / English / 日本
 
 - Next.js 14 App Router + TypeScript (strict) + Tailwind CSS, fully static via `output: export`
 - Trilingual content centralized in `config/locales/*.json`, guarded in CI by Zod validation + a trilingual consistency check
-- Dark slate visual system with semantic design tokens (CSS variables); swappable primary color and light/dark modes
+- Light-first visual system with semantic design tokens (CSS variables); swappable primary color and light/dark modes (light by default)
 - Multi-page structure: Home / Services / Case list + Case detail / About / Contact / Privacy / Terms / 404
 - SEO: self-referencing canonical + hreflang + Open Graph + `sitemap.xml` / `robots.txt`
 - Accessibility: semantic landmarks, focus rings, `prefers-reduced-motion`, skip-to-content link
