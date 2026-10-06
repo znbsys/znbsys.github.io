@@ -67,22 +67,22 @@ export function saveStoredPrimary(hex: string | null): void {
   }
 }
 
-/** 读取背景明暗模式；未保存或非法时返回 'dark'（默认，与现状一致） */
+/** 读取背景明暗模式；未保存或非法时返回 'light'（默认） */
 export function loadStoredMode(): ThemeMode {
-  if (typeof window === 'undefined') return 'dark';
+  if (typeof window === 'undefined') return 'light';
   try {
-    return window.localStorage.getItem(THEME_MODE_STORAGE_KEY) === 'light' ? 'light' : 'dark';
+    return window.localStorage.getItem(THEME_MODE_STORAGE_KEY) === 'dark' ? 'dark' : 'light';
   } catch {
-    return 'dark';
+    return 'light';
   }
 }
 
-/** 保存背景明暗模式；暗色模式为默认值，清除存储项 */
+/** 保存背景明暗模式；亮色模式为默认值，清除存储项 */
 export function saveStoredMode(mode: ThemeMode): void {
   if (typeof window === 'undefined') return;
   try {
-    if (mode === 'light') {
-      window.localStorage.setItem(THEME_MODE_STORAGE_KEY, 'light');
+    if (mode === 'dark') {
+      window.localStorage.setItem(THEME_MODE_STORAGE_KEY, 'dark');
     } else {
       window.localStorage.removeItem(THEME_MODE_STORAGE_KEY);
     }
@@ -141,10 +141,10 @@ function setVars(el: HTMLElement, vars: Record<string, string>): void {
  * 把主题写入 CSS 变量：主色 + 整站调色板（页面底、分区底、卡片、边框、
  * 浅色面板、强调色、标题/正文文字），并按明暗模式派生，全站即时换肤。
  *
- * - 暗色模式 + 默认色/空值：恢复服务端注入的站点配置主题（保持现状）
- * - 亮色模式：由主色派生浅色背景 + 深色文字，即使未自定义颜色
+ * - 亮色模式（默认）+ 默认色/空值：恢复服务端注入的站点配置主题
+ * - 暗色模式：由主色派生深色背景 + 浅色文字
  */
-export function applyTheme(hex: string | null | undefined, mode: ThemeMode = 'dark'): void {
+export function applyTheme(hex: string | null | undefined, mode: ThemeMode = 'light'): void {
   if (typeof document === 'undefined') return;
 
   const body = document.body;
@@ -152,9 +152,9 @@ export function applyTheme(hex: string | null | undefined, mode: ThemeMode = 'da
 
   const root = document.documentElement;
   const storedHex = hex && isValidHex(hex) ? hex : null;
-  const dark = mode !== 'light';
+  const light = mode !== 'dark';
 
-  if (dark && (!storedHex || isDefaultPrimary(storedHex))) {
+  if (light && (!storedHex || isDefaultPrimary(storedHex))) {
     root.style.removeProperty('--color-primary');
     for (const name of Object.values(PALETTE_CSS_VARS)) {
       root.style.removeProperty(name);

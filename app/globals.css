@@ -5,21 +5,21 @@
 :root {
   --color-primary: 37 99 235;
   --color-secondary: 124 58 237;
-  /* 语义主题令牌（默认值 = 原 slate/white/blue 取值，保证默认主题不变） */
-  --color-page: 2 6 23;
-  --color-band: 15 23 42;
-  --color-surface: 30 41 59;
-  --color-line: 30 41 59;
-  --color-line-strong: 51 65 85;
-  --color-panel: 255 255 255;
-  --color-panel-line: 226 232 240;
-  --color-wash: 248 250 252;
-  --color-accent: 96 165 250;
-  /* 文字令牌（默认 = 原 white/slate 系） */
-  --color-title: 255 255 255;
-  --color-ink: 241 245 249;
-  --color-soft: 203 213 225;
-  --color-muted: 148 163 184;
+  /* 语义主题令牌（默认 = 亮色模式调色板，由默认主色 #2563eb 派生） */
+  --color-page: 249 250 251;
+  --color-band: 240 241 245;
+  --color-surface: 222 227 237;
+  --color-line: 204 210 224;
+  --color-line-strong: 169 181 208;
+  --color-panel: 252 252 253;
+  --color-panel-line: 212 217 227;
+  --color-wash: 243 244 246;
+  --color-accent: 27 77 187;
+  /* 文字令牌（亮色底 = slate-900/800/600/500） */
+  --color-title: 15 23 42;
+  --color-ink: 30 41 59;
+  --color-soft: 71 85 105;
+  --color-muted: 100 116 139;
   --radius-card: 1rem;
   --font-cjk: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
   --font-latin: 'Inter', 'Helvetica Neue', Arial, sans-serif;

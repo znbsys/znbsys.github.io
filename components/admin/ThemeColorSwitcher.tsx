@@ -22,7 +22,7 @@ import {
  */
 export function ThemeColorSwitcher() {
   const [hex, setHex] = useState(DEFAULT_PRIMARY);
-  const [mode, setMode] = useState<ThemeMode>('dark');
+  const [mode, setMode] = useState<ThemeMode>('light');
 
   // 水合后读取已保存的主题，避免 SSR/CSR 不一致
   useEffect(() => {
