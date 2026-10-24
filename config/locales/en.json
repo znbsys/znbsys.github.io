@@ -1,0 +1,499 @@
+{
+  "meta": {
+    "title": "ZNBSYS · Full-stack Web Development & Digital Solutions",
+    "description": "ZNBSYS delivers corporate websites, web apps, admin systems, e-commerce and long-term maintenance as a one-stop web development partner, measured by results.",
+    "keywords": ["web development", "website design", "web app development", "outsource development", "ZNBSYS"],
+    "favicon": "/favicon.svg",
+    "ogImage": "/og.svg",
+    "locale": "en"
+  },
+  "theme": {
+    "primary": "#2563eb",
+    "secondary": "#7c3aed",
+    "radius": "xl",
+    "font": "sans",
+    "background": "gradient"
+  },
+  "brand": {
+    "name": "ZNBSYS",
+    "logoSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>",
+    "tagline": "Full-stack Web Development & Digital Solutions"
+  },
+  "navbar": {
+    "sticky": true,
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "Services", "href": "/services/" },
+      { "label": "Cases", "href": "/cases/" },
+      { "label": "About", "href": "/about/" },
+      { "label": "Contact", "href": "/contact/" }
+    ],
+    "ctaButton": { "text": "Get a quote", "href": "/contact/" }
+  },
+  "hero": {
+    "badge": "Design · Build · Ship · Maintain",
+    "headline": "Turn ideas into web products that ship",
+    "subheadline": "From corporate websites to complex web applications, we cover discovery, design, engineering and long-term maintenance — and we measure what we deliver.",
+    "primaryCta": { "text": "Explore services", "href": "/services/" },
+    "secondaryCta": { "text": "See our work", "href": "/cases/" }
+  },
+  "services": {
+    "title": "What we build",
+    "subtitle": "From 0 to 1 launches and from 1 to N iterations — fixed-scope projects or embedded long-term teams.",
+    "columns": 3,
+    "items": [
+      {
+        "id": "corporate-web",
+        "iconName": "Globe",
+        "title": "Corporate & marketing websites",
+        "summary": "Brand sites, product pages and landing pages with SEO, speed and multiple languages.",
+        "description": "High-performance, maintainable websites for companies and products. We start from information architecture and content strategy, then ship responsive pages, SEO structure and analytics — with multi-language support so acquisition cost keeps falling.",
+        "capabilities": ["Information architecture & content planning", "Responsive front-end development", "SEO structure and performance tuning", "Multi-language, config-driven content"],
+        "deliverables": ["Deployable site source code", "Design files and component notes", "SEO metadata and sitemap", "Deployment and release workflow"],
+        "scenarios": ["Corporate brand sites", "Product landing pages", "Campaign microsites"],
+        "tech": ["Next.js", "React", "Tailwind CSS", "GitHub Pages"]
+      },
+      {
+        "id": "web-app",
+        "iconName": "Code2",
+        "title": "Web application development",
+        "summary": "SaaS platforms, business tools and data products — front end and back end included.",
+        "description": "Web apps built around real business flows: from prototype to scale, covering permissions, approvals, reporting and integrations. Component-driven front ends and an evolvable server architecture keep future iteration cheap.",
+        "capabilities": ["Discovery and prototyping", "End-to-end full-stack delivery", "Permissions and multi-tenancy design", "Third-party integrations"],
+        "deliverables": ["Working application", "API documentation and data dictionary", "Test cases and acceptance report", "Source code and handover notes"],
+        "scenarios": ["SaaS products", "Customer or partner portals", "Internal business systems"],
+        "tech": ["Next.js", "TypeScript", "Node.js", "PostgreSQL"]
+      },
+      {
+        "id": "admin-system",
+        "iconName": "LayoutDashboard",
+        "title": "Admin & back-office systems",
+        "summary": "Content management, operations consoles, approval workflows and role permissions.",
+        "description": "Turn repetitive manual processes into system capabilities: forms and workflows, role-based access, data dictionaries, exports and reports. We design back offices people actually want to use.",
+        "capabilities": ["Roles and permission modelling", "Workflow and form engine", "Data tables and bulk actions", "Audit logs and traceability"],
+        "deliverables": ["Admin console", "Permission matrix documentation", "Operator handbook", "Deployment and backup plan"],
+        "scenarios": ["CMS and content ops", "Review and operations consoles", "Order and ticketing systems"],
+        "tech": ["React", "Ant Design", "REST API", "MySQL"]
+      },
+      {
+        "id": "ecommerce",
+        "iconName": "ShoppingCart",
+        "title": "E-commerce & mini programs",
+        "summary": "Standalone stores, mini-program shops, payments and order fulfilment.",
+        "description": "The full transaction chain — catalogue, cart, promotions, payment, orders and after-sales — kept consistent across your standalone store and mini program, with conversion optimisation and configurable campaigns.",
+        "capabilities": ["Catalogue and inventory model", "Checkout and order flow", "Campaign configuration", "Conversion tracking and analytics"],
+        "deliverables": ["Storefront and operations back office", "Payment integration and testing", "Operations handbook", "Launch checklist"],
+        "scenarios": ["Cross-border standalone stores", "Brand mini-program shops", "Membership commerce"],
+        "tech": ["Next.js", "WeChat Mini Program", "Stripe", "Payment gateways"]
+      },
+      {
+        "id": "mobile-h5",
+        "iconName": "Smartphone",
+        "title": "Mobile H5 & cross-platform apps",
+        "summary": "Mobile web pages, campaign sites and React Native clients.",
+        "description": "Mobile-first H5 pages and cross-platform apps: shareable campaign pages, QR check-in and lightweight clients — tuned for performance and compatibility on entry-level devices.",
+        "capabilities": ["Mobile performance optimisation", "Cross-platform consistency", "Sharing and referral flows", "Compatibility testing"],
+        "deliverables": ["H5 pages or cross-platform app", "Compatibility test report", "Release and hot-update workflow", "Analytics plan"],
+        "scenarios": ["Marketing campaigns", "QR code and offline redemption", "Lightweight cross-platform apps"],
+        "tech": ["React", "React Native", "Vite", "Mobile adaptation"]
+      },
+      {
+        "id": "maintenance",
+        "iconName": "LifeBuoy",
+        "title": "Maintenance & technical support",
+        "summary": "Deployment, monitoring, iteration and security hardening after launch.",
+        "description": "Delivery is not the finish line: we keep releases, incident response, dependency upgrades and security patches running on a monthly or yearly subscription.",
+        "capabilities": ["CI/CD and automated releases", "Monitoring, alerting and logging", "Performance and security hardening", "Dependency upgrades and iteration"],
+        "deliverables": ["Runbook and incident playbook", "Monitoring dashboards", "Monthly health report", "SLA-backed response"],
+        "scenarios": ["Maintaining existing systems", "Continuous iteration after launch", "Security and performance fixes"],
+        "tech": ["GitHub Actions", "Docker", "Nginx", "Logging & monitoring"]
+      }
+    ]
+  },
+  "cases": {
+    "title": "Selected cases",
+    "subtitle": "Real projects with measurable outcomes. The entries below are placeholder samples and will be replaced with authorised case studies before launch.",
+    "items": [
+      {
+        "slug": "manufacturing-website-rebuild",
+        "title": "Rebuilding a manufacturer's global website",
+        "summary": "Re-architected a manufacturer's brand site and multi-language presence, cutting first contentful paint to under 1.5 seconds.",
+        "client": "Hengda Smart Manufacturing",
+        "industry": "Manufacturing",
+        "year": "2025",
+        "services": ["corporate-web"],
+        "tech": ["Next.js", "Tailwind CSS", "headless CMS", "i18n"],
+        "results": [
+          { "label": "First load", "value": "1.4s" },
+          { "label": "Organic traffic", "value": "+180%" },
+          { "label": "Qualified leads", "value": "+95%" }
+        ],
+        "cover": "/covers/case-manufacturing.svg",
+        "featured": true,
+        "detail": {
+          "overview": "One rebuild turned the website from a business card into a lead channel.",
+          "background": [
+            "The legacy site ran on a decade-old template with tangled navigation and a poor mobile experience; overseas buyers needed more than three steps to reach specs and contact details.",
+            "Content updates went through an external agency, so a single product change took a week — the marketing team could not self-serve."
+          ],
+          "approach": [
+            "We co-created the information architecture with sales and marketing, collapsing content into a three-level products → models → specs structure and defining a configurable multi-language content model.",
+            "The front end statically renders with Next.js, with image and font strategies to keep the critical path minimal, while structured data and a sitemap cover SEO."
+          ],
+          "steps": [
+            { "title": "Research & information architecture", "text": "Interviewed 8 internal users and 5 overseas buyers; delivered a sitemap and content inventory." },
+            { "title": "Visual & component design", "text": "Built design tokens and 20+ components on the brand palette, delivered high-fidelity screens." },
+            { "title": "Build & content migration", "text": "Three languages developed in parallel with scripts to migrate and proof historical material." },
+            { "title": "Launch & handover", "text": "Connected analytics and indexing, trained the marketing team to maintain content." }
+          ]
+        }
+      },
+      {
+        "slug": "saas-console",
+        "title": "SaaS console and billing system",
+        "summary": "A multi-tenant console covering subscriptions, usage billing and support tickets — the full loop from trial to paying customer.",
+        "client": "Yuncel Tech",
+        "industry": "SaaS",
+        "year": "2025",
+        "services": ["web-app", "admin-system"],
+        "tech": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
+        "results": [
+          { "label": "Time to launch", "value": "12 weeks" },
+          { "label": "Billing discrepancies", "value": "0" },
+          { "label": "Support tickets", "value": "-40%" }
+        ],
+        "cover": "/covers/case-saas.svg",
+        "featured": true,
+        "detail": {
+          "overview": "Subscriptions, usage and tickets in one account model so commercialisation can move.",
+          "background": [
+            "The product only had a trial build: no accounts, plan management or billing — every contract was handled offline with manual reconciliation.",
+            "Operations needed to configure plans and discounts themselves without waiting for development."
+          ],
+          "approach": [
+            "We designed a four-layer model of tenants, members, subscriptions and usage, persisting billing events and aligning them with payment callbacks so every invoice is traceable.",
+            "The console mixes server rendering with targeted client interactivity, keeping first paint of key list pages under a second."
+          ],
+          "steps": [
+            { "title": "Commercial flow mapping", "text": "Turned trial, conversion, renewal and refund into an explicit state machine." },
+            { "title": "Data model & APIs", "text": "Defined tenant/subscription/usage models with idempotent billing endpoints." },
+            { "title": "Console & billing", "text": "Shipped plan configuration, usage dashboards, invoices and self-service receipts." },
+            { "title": "Integration & load testing", "text": "Reconciled payment callbacks and load-tested concurrency." }
+          ]
+        }
+      },
+      {
+        "slug": "cross-border-store",
+        "title": "Cross-border e-commerce store",
+        "summary": "Built a standalone store and operations back office from scratch, wiring payments, inventory and shipping — GMV passed 10M in three months.",
+        "client": "Bluebay Living",
+        "industry": "Retail",
+        "year": "2024",
+        "services": ["ecommerce", "corporate-web"],
+        "tech": ["Next.js", "Stripe", "headless CMS", "Vercel"],
+        "results": [
+          { "label": "First-order conversion", "value": "+62%" },
+          { "label": "Page load", "value": "1.8s" },
+          { "label": "Peak sale orders", "value": "×5" }
+        ],
+        "cover": "/covers/case-ecommerce.svg",
+        "featured": true,
+        "detail": {
+          "overview": "Shipping both 'can sell' and 'can operate' in a single build.",
+          "background": [
+            "The brand planned to start on a hosted site builder, but multi-currency display, tax rules and integration with their own marketing stack kept hitting limits.",
+            "They needed something that launches fast yet leaves room for custom logic."
+          ],
+          "approach": [
+            "A headless architecture: a statically generated storefront for speed, catalogue and content served from the CMS, with payments and inventory behind dedicated APIs.",
+            "The operations back office exposes banners, promo codes and stock alerts so marketers can prepare a campaign without developers."
+          ],
+          "steps": [
+            { "title": "Selection & architecture", "text": "Compared site builders vs custom build with a cost and extensibility analysis." },
+            { "title": "Transaction chain", "text": "Built cart, promotions, payment, tax calculation and shipping lookup end to end." },
+            { "title": "Operations back office", "text": "Delivered banners, promo codes, inventory and order management." },
+            { "title": "Peak readiness", "text": "Load testing, cache tuning and an on-call plus rollback plan for launch day." }
+          ]
+        }
+      },
+      {
+        "slug": "edtech-learning-platform",
+        "title": "Online learning platform",
+        "summary": "Courses, assignments, live sessions and learning data in one platform — halving the admin team's daily workload.",
+        "client": "Qicheng Academy",
+        "industry": "Education",
+        "year": "2024",
+        "services": ["web-app"],
+        "tech": ["Next.js", "React", "MySQL", "Object storage", "Live streaming SDK"],
+        "results": [
+          { "label": "Admin handling time", "value": "-50%" },
+          { "label": "Course completion", "value": "+28%" },
+          { "label": "Concurrent live viewers", "value": "5,000" }
+        ],
+        "cover": "/covers/case-edtech.svg",
+        "featured": false,
+        "detail": {
+          "overview": "Scheduling, assignments and learning data on a single spine — no more spreadsheet shuffling.",
+          "background": [
+            "The academy managed courses and homework with spreadsheets and group chats; staff spent hours every week reconciling rosters and progress.",
+            "Learners lacked a continuous path, and completion rates had stagnated."
+          ],
+          "approach": [
+            "We modelled courses, cohorts, assignments and live sessions into one scheduling core so most admin tasks happen in a single screen.",
+            "The learner experience puts the next step front and centre, with reminders that keep momentum going."
+          ],
+          "steps": [
+            { "title": "Shadowing & interviews", "text": "Followed the admin team for a full week to locate delays and error hotspots." },
+            { "title": "Scheduling & permissions", "text": "Designed the cohort/course/instructor permission matrix with conflict checks." },
+            { "title": "Learner experience", "text": "Rebuilt learning paths, assignment submission and replay playback." },
+            { "title": "Data dashboards", "text": "Shipped completion, engagement and admin-efficiency dashboards." }
+          ]
+        }
+      },
+      {
+        "slug": "ops-portal",
+        "title": "Internal operations portal",
+        "summary": "Moved approval flows scattered across spreadsheets and email into one system with tickets, permissions and audit trails.",
+        "client": "Ruicheng Group",
+        "industry": "Enterprise",
+        "year": "2023",
+        "services": ["admin-system", "maintenance"],
+        "tech": ["React", "Node.js", "MySQL", "RBAC"],
+        "results": [
+          { "label": "Approval time", "value": "-65%" },
+          { "label": "Flows digitised", "value": "100%" },
+          { "label": "Annual headcount saved", "value": "~3 FTE" }
+        ],
+        "cover": "/covers/case-portal.svg",
+        "featured": false,
+        "detail": {
+          "overview": "Map the process first, systemise second: approvals consolidated in one place.",
+          "background": [
+            "Over 20 approval flows were spread across emails and paper signatures, often stalling at 'who do I ask next?'.",
+            "Without an audit trail, accountability after the fact was impossible."
+          ],
+          "approach": [
+            "We inventoried and simplified the flows — removing 40% of redundant steps — then implemented them on a configurable workflow engine so new flows need no code changes.",
+            "RBAC permissions and full audit logging were added to satisfy internal controls."
+          ],
+          "steps": [
+            { "title": "Process inventory", "text": "Mapped 20+ flows and cut 40% of redundant steps." },
+            { "title": "Workflow engine", "text": "Configurable nodes, conditions and cc rules." },
+            { "title": "Permissions & audit", "text": "Permission matrix plus complete operation logs." },
+            { "title": "Rollout & maintenance", "text": "Department-by-department training, then monthly iteration." }
+          ]
+        }
+      },
+      {
+        "slug": "analytics-dashboard",
+        "title": "Business analytics dashboard",
+        "summary": "A real-time executive dashboard unifying metrics from scattered systems on a single definition, refreshed daily.",
+        "client": "Hoshino Retail",
+        "industry": "Internet",
+        "year": "2023",
+        "services": ["web-app", "maintenance"],
+        "tech": ["React", "ECharts", "Node.js", "Data warehouse"],
+        "results": [
+          { "label": "Report turnaround", "value": "3 days → 10 min" },
+          { "label": "Metrics aligned", "value": "120+" },
+          { "label": "Daily active users", "value": "300+" }
+        ],
+        "cover": "/covers/case-dashboard.svg",
+        "featured": false,
+        "detail": {
+          "overview": "One metric definition so the daily business review stops arguing about numbers.",
+          "background": [
+            "Each business system defined metrics differently, so the same figure disagreed across reports and meetings started with a debate.",
+            "Monthly reports took the data team three days of manual assembly."
+          ],
+          "approach": [
+            "We co-authored a metric dictionary with the client, enforcing definitions in the ETL and API layers so the front end only consumes a single source of truth.",
+            "Dashboards are role-based: executives see the overview, operators see detail, with drill-down and export."
+          ],
+          "steps": [
+            { "title": "Metric alignment", "text": "Confirmed 120+ metric definitions with business owners and published a dictionary." },
+            { "title": "Data pipeline", "text": "Scheduled jobs with validation and alerting on anomalies." },
+            { "title": "Dashboard build", "text": "Overview, detail and drill-down views per role." },
+            { "title": "Ongoing operations", "text": "Monthly metric iterations with stable job reliability." }
+          ]
+        }
+      }
+    ]
+  },
+  "process": {
+    "title": "How we work together",
+    "subtitle": "Transparent phases and a fixed communication rhythm keep schedule and budget under control.",
+    "steps": [
+      {
+        "step": "01",
+        "iconName": "MessageSquare",
+        "title": "Discovery",
+        "text": "One or two deep sessions to pin down goals, scope and budget; you get a backlog and a first schedule."
+      },
+      {
+        "step": "02",
+        "iconName": "ClipboardList",
+        "title": "Proposal & prototype",
+        "text": "Information architecture, prototype and technical plan, with milestones, deliverables and a fixed quote."
+      },
+      {
+        "step": "03",
+        "iconName": "Code",
+        "title": "Design & build",
+        "text": "Two-week iterations: design reviews, a clickable staging environment and weekly progress syncs."
+      },
+      {
+        "step": "04",
+        "iconName": "Rocket",
+        "title": "Launch & maintain",
+        "text": "Deployment, content and data handover, training and docs — then ongoing maintenance."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "subtitle": "Placeholder testimonials that will be replaced with real feedback before launch.",
+    "items": [
+      {
+        "quote": "From discovery to launch the rhythm was rock solid — a clickable build every week instead of a big reveal at the end.",
+        "author": "Zhang",
+        "role": "Marketing Director",
+        "company": "Hengda Smart Manufacturing",
+        "rating": 5
+      },
+      {
+        "quote": "They understood our operations better than we did: untangling the approval mess before writing any code. Very professional.",
+        "author": "Li",
+        "role": "Head of Operations",
+        "company": "Ruicheng Group",
+        "rating": 5
+      },
+      {
+        "quote": "Support after launch has been reliable, incidents handled quickly and documentation complete — internal handover was painless.",
+        "author": "Wang",
+        "role": "Technical Co-founder",
+        "company": "Yuncel Tech",
+        "rating": 5
+      }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "description": [
+      "ZNBSYS is a small team of full-stack engineers and designers building shippable, measurable web products for companies and startups.",
+      "We believe good delivery comes from a clear process and honest communication: requirements on paper, progress on the board, problems solved the same week — never deferred to launch day."
+    ],
+    "stats": [
+      { "label": "Projects delivered", "value": "120", "suffix": "+" },
+      { "label": "Client satisfaction", "value": "98", "suffix": "%" },
+      { "label": "Average first response", "value": "<2", "suffix": "h" },
+      { "label": "Core team", "value": "20", "suffix": "+" }
+    ],
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "Team founded",
+        "text": "Started with corporate and campaign sites, establishing design and engineering as one delivery."
+      },
+      {
+        "year": "2021",
+        "title": "Productised delivery",
+        "text": "Moved into admin systems and web apps, building an internal component library and scaffolding."
+      },
+      {
+        "year": "2023",
+        "title": "Multi-language & global clients",
+        "text": "Shipped tri-lingual sites and cross-border commerce, with documentation-driven process."
+      },
+      {
+        "year": "2025",
+        "title": "Maintenance subscriptions",
+        "text": "Launched monthly maintenance covering monitoring, security and continuous iteration."
+      }
+    ],
+    "values": [
+      {
+        "iconName": "HeartHandshake",
+        "title": "Client outcomes first",
+        "text": "Responsible for business results before code; we never sell technology you don't need."
+      },
+      {
+        "iconName": "Lightbulb",
+        "title": "Engineering for business problems",
+        "text": "Automate the repetition, keep complexity in the system and simplicity for the user."
+      },
+      {
+        "iconName": "Shield",
+        "title": "Quality and security owned",
+        "text": "Code review, tests and backups are defaults — security is never an afterthought."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ready to start your project?",
+    "subtitle": "Send your requirements and we will reply within one business day with an initial scope and budget range.",
+    "email": "znbsys@outlook.com",
+    "phone": "+81 000-0000-0000",
+    "address": "Tamatsukuri Motomachi, Tennoji-ku, Osaka, Japan",
+    "socials": [
+      { "platform": "github", "label": "GitHub", "href": "https://github.com/znbsys" },
+      { "platform": "x", "label": "X", "href": "https://x.com/znbsys" },
+      { "platform": "email", "label": "Email", "href": "mailto:znbsys@outlook.com" }
+    ],
+    "faq": [
+      {
+        "q": "How long does a website project take?",
+        "a": "A typical corporate site takes 3–6 weeks; with multiple languages and content migration, 6–8 weeks. You receive a milestone schedule right after discovery."
+      },
+      {
+        "q": "How do you price projects?",
+        "a": "Fixed price per project or time-and-materials, with monthly subscriptions for maintenance. Scope is agreed up front so there are no surprises mid-project."
+      },
+      {
+        "q": "Can you take on just part of the work?",
+        "a": "Yes. Common splits are design first, or a single module first — we quote by module and continue from there."
+      },
+      {
+        "q": "Do you support us after launch?",
+        "a": "Yes. Delivery includes training and documentation, and you can move to a monthly maintenance subscription covering incidents, security patches and small iterations."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Have a project in mind?",
+    "text": "Whether it is a 0-to-1 product or a legacy system that needs rescuing, let's talk it through before you decide.",
+    "primaryCta": { "text": "Talk to us", "href": "/contact/" },
+    "secondaryCta": { "text": "More cases", "href": "/cases/" }
+  },
+  "footer": {
+    "description": "Full-stack web development: corporate sites, web apps, back-office systems and long-term maintenance.",
+    "copyright": "© 2026 ZNBSYS. All rights reserved.",
+    "linkGroups": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Corporate websites", "href": "/services/#service-corporate-web" },
+          { "label": "Web applications", "href": "/services/#service-web-app" },
+          { "label": "Admin systems", "href": "/services/#service-admin-system" },
+          { "label": "Maintenance", "href": "/services/#service-maintenance" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Case studies", "href": "/cases/" },
+          { "label": "About us", "href": "/about/" },
+          { "label": "Contact", "href": "/contact/" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy policy", "href": "/privacy/" },
+          { "label": "Terms of service", "href": "/terms/" }
+        ]
+      }
+    ]
+  },
+  "order": ["hero", "services", "featuredCases", "process", "testimonials", "cta"]
+}
