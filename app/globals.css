@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 37 99 235;
+  --color-secondary: 124 58 237;
+  /* 语义主题令牌（默认 = 亮色模式调色板，由默认主色 #2563eb 派生） */
+  --color-page: 249 250 251;
+  --color-band: 240 241 245;
+  --color-surface: 222 227 237;
+  --color-line: 204 210 224;
+  --color-line-strong: 169 181 208;
+  --color-panel: 252 252 253;
+  --color-panel-line: 212 217 227;
+  --color-wash: 243 244 246;
+  --color-accent: 27 77 187;
+  /* 文字令牌（亮色底 = slate-900/800/600/500） */
+  --color-title: 15 23 42;
+  --color-ink: 30 41 59;
+  --color-soft: 71 85 105;
+  --color-muted: 100 116 139;
+  --radius-card: 1rem;
+  --font-cjk: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  --font-latin: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: var(--font-latin);
+}
+
+/* CJK 排版微调 */
+html[lang^='zh'] body,
+html[lang^='ja'] body {
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+/* 尊重 prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
